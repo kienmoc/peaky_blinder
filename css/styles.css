@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: red;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/peakyblinder.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header h1 {
+    color: #ededed;
+    font-weight: 600;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.header h1:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ededed;
+}
+
+.nav-items li a:hover {
+    color: #06b8ff;
+    transition: .4s;
+}
+
+.section {
+    padding: 150px 0px;
+    background-color: rgb(11, 11, 11);
+    height: auto;
+    width: 100%;
+}
+
+.shelby-brother {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shelby-text {
+    width: 550px;
+}
+
+.shelby-text h1 {
+    font-size: 75px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.shelby-text h3 {
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.shelby-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.shelby-text a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shelby-text a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00abf0;
+    overflow: hidden;
+    z-index: -1;
+    transition: .5s;
+}
+
+.shelby-text a:hover::before {
+    width: 100%;
+}
+
+.shelby-text a:hover {
+    font-weight: bold;
+}
+
+.shelby-video {
+    margin-top: 75px;
+}
+
+.shelby-video video {
+    margin-left: 395px;
+    height: 500px;
+    width: 1130px;
+}
+
+.tommy-shelby {
+    background-color: rgb(11, 11, 11);
+    margin-bottom: 50px;
+}
+
+.arthur-shelby {
+    background-color: rgba(82, 12, 12, 0.238);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.john-shelby {
+    padding-top: 100px;
+    background-color: rgba(128, 128, 128, 0.172);
+    padding-bottom: 50px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+}
+
+.social-items h3 {
+    color: white;
+    text-align: center;
+    transform: translateY(-120px);
+}
+
+.social-items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.social-items ul li {
+    list-style-type: none;
+    transform: translateY(-100px);
+}
+
+.social-items ul a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-items a:hover{
+    background-color: #00abf0;
+    transition: .4s;
+}
